@@ -1,0 +1,56 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+</body>
+</html>  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    <p id='demo_text'></p>ini adalah text awal</p>
+    <button id="demo_btn" onclick="ubahtext()">ubah text</button>
+    <button onclick="testwrite()">writer</button>
+    <button onclick="showAlert()">show alert</button>
+    <button onclick="showConsole()">show Console</button>
+    <script>
+        function ubahtext(){
+            var text = document.getElementById('demo_text').innerHTML;
+            if(text == 'ini adalah text awal'){
+                document.getElementById('demo_text').innerHTML = 
+                'setelah dimodif dengan JavaScript';
+                document.getElementById('demo_btn').innerHTML = 
+                'Kembali';
+            } else {
+                document.getElementById('demo_text').innerHTML = 
+                'ini adalah text awal';
+                document.getElementById('demo_btn').innerHTML = 
+                'ubah text';
+            }
+        }
+        function testwrite(){
+            document.write('Test Write')
+        }
+        function showAlert(){
+            alert('Hello')
+        }
+        function showConsole(){
+            console.log(5+9)
+        }
+    </script>
+</body>
+</html>
